@@ -1,0 +1,16 @@
+SELECT
+	`users`.`Id`,
+    `objects`.`name`,
+    `users`.`email`,
+    `users`.`password`,
+    `status`.`status`,
+    `objects`.`last_login`,
+    `objects`.`created`
+FROM `users`
+INNER JOIN `objects`
+ON `users`.`object_id` = `objects`.`Id`
+INNER JOIN `status`
+ON `objects`.`status_id` = `status`.`Id`
+WHERE
+	`status`.`status` = 'Онлайн' AND
+	`objects`.`created` > '2020-01-01'

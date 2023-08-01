@@ -1,0 +1,6 @@
+UPDATE
+	`objects`
+    SET `objects`.`status_id` = 1,
+    	`objects`.`last_login` = '2022-08-25'
+    WHERE
+    	`objects`.`status_id` = 0

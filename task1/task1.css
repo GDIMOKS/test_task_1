@@ -1,0 +1,11 @@
+.popup {
+    border: solid 1px black;
+    margin: 25px;
+    padding: 25px;
+    width: 250px;
+    height:250px;
+    align-items:center;
+    display:flex;
+    justify-content: center;
+    cursor: pointer;
+}
